@@ -1,0 +1,190 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 height: 100vh;
+	 width: 100%;
+	 background-color: #ecf2f8;
+	 font-family: 'Barlow Semi Condensed', sans-serif;
+	 font-weight: 500;
+	 font-size: 13px;
+}
+ body main {
+	 height: 95%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ body main .testimonials {
+	 height: auto;
+	 width: 90em;
+	 display: grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 grid-template-rows: 1fr 1fr;
+	 gap: 25px;
+	 grid-template-areas: 'box1 box1 box2 box5' 'box3 box4 box4 box5';
+}
+ body main .testimonials .box, body main .testimonials .testim-box1, body main .testimonials .testim-box2, body main .testimonials .testim-box3, body main .testimonials .testim-box4, body main .testimonials .testim-box5 {
+	 border-radius: 7px;
+	 padding: 25px;
+	 line-height: 1.5;
+	 display: flex;
+	 flex-direction: column;
+}
+ body main .testimonials .box .testim-box-header, body main .testimonials .testim-box1 .testim-box-header, body main .testimonials .testim-box2 .testim-box-header, body main .testimonials .testim-box3 .testim-box-header, body main .testimonials .testim-box4 .testim-box-header, body main .testimonials .testim-box5 .testim-box-header {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 margin-bottom: 10px;
+	 flex-shrink: 0;
+}
+ body main .testimonials .box .testim-box-header img, body main .testimonials .testim-box1 .testim-box-header img, body main .testimonials .testim-box2 .testim-box-header img, body main .testimonials .testim-box3 .testim-box-header img, body main .testimonials .testim-box4 .testim-box-header img, body main .testimonials .testim-box5 .testim-box-header img {
+	 width: 30px;
+	 height: auto;
+	 border-radius: 50%;
+	 margin-right: 15px;
+}
+ body main .testimonials .box .testim-box-header .verified, body main .testimonials .testim-box1 .testim-box-header .verified, body main .testimonials .testim-box2 .testim-box-header .verified, body main .testimonials .testim-box3 .testim-box-header .verified, body main .testimonials .testim-box4 .testim-box-header .verified, body main .testimonials .testim-box5 .testim-box-header .verified {
+	 opacity: 50%;
+}
+ body main .testimonials .box .testim-box-content, body main .testimonials .testim-box1 .testim-box-content, body main .testimonials .testim-box2 .testim-box-content, body main .testimonials .testim-box3 .testim-box-content, body main .testimonials .testim-box4 .testim-box-content, body main .testimonials .testim-box5 .testim-box-content {
+	 display: flex;
+	 flex-direction: column;
+	 flex: 1;
+}
+ body main .testimonials .box .testim-box-content .title, body main .testimonials .testim-box1 .testim-box-content .title, body main .testimonials .testim-box2 .testim-box-content .title, body main .testimonials .testim-box3 .testim-box-content .title, body main .testimonials .testim-box4 .testim-box-content .title, body main .testimonials .testim-box5 .testim-box-content .title {
+	 height: 67.2px;
+	 flex-shrink: 0;
+	 margin-bottom: 10px;
+}
+ body main .testimonials .box .testim-box-content .content, body main .testimonials .testim-box1 .testim-box-content .content, body main .testimonials .testim-box2 .testim-box-content .content, body main .testimonials .testim-box3 .testim-box-content .content, body main .testimonials .testim-box4 .testim-box-content .content, body main .testimonials .testim-box5 .testim-box-content .content {
+	 opacity: 70%;
+	 flex: 1;
+}
+ body main .testimonials .testim-box1 {
+	 grid-area: box1;
+	 background-color: #7541c8;
+	 color: #fff;
+	 position: relative;
+	 z-index: 1;
+}
+ body main .testimonials .testim-box1 .avatar {
+	 border: 2px solid #a775f1;
+}
+ body main .testimonials .testim-box1 #pattern {
+	 position: absolute;
+	 top: 0;
+	 left: 380px;
+	 z-index: -1;
+}
+ body main .testimonials .testim-box2 {
+	 grid-area: box2;
+	 background-color: #48556a;
+	 color: #fff;
+}
+ body main .testimonials .testim-box3 {
+	 grid-area: box3;
+	 background-color: #fff;
+	 color: #48556a;
+}
+ body main .testimonials .testim-box4 {
+	 grid-area: box4;
+	 background-color: #19212e;
+	 color: #fff;
+}
+ body main .testimonials .testim-box4 .avatar {
+	 border: 2px solid #a775f1;
+}
+ body main .testimonials .testim-box5 {
+	 grid-area: box5;
+	 background-color: #fff;
+	 color: #48556a;
+}
+ @media only screen and (max-width: 1200px) {
+	 body {
+		 height: 100%;
+		 width: 100%;
+	}
+	 body main {
+		 margin: 50px auto;
+	}
+	 body main .testimonials {
+		 width: 70%;
+		 display: grid;
+		 grid-template-columns: 1fr 1fr 1fr;
+		 grid-template-rows: 1fr 1fr 1fr;
+		 grid-template-areas: 'box1 box1 box2' 'box3 box4 box4' 'box5 box5 box5';
+	}
+	 body main .testimonials .box .testim-box-content .title, body main .testimonials .testim-box1 .testim-box-content .title, body main .testimonials .testim-box2 .testim-box-content .title, body main .testimonials .testim-box3 .testim-box-content .title, body main .testimonials .testim-box4 .testim-box-content .title, body main .testimonials .testim-box5 .testim-box-content .title {
+		 height: unset;
+	}
+	 body main .testimonials .testim-box1 {
+		 grid-area: box1;
+	}
+	 body main .testimonials .testim-box1 #pattern {
+		 top: 0;
+		 left: unset;
+		 right: 30px;
+	}
+	 body main .testimonials .testim-box2 {
+		 grid-area: box2;
+	}
+	 body main .testimonials .testim-box3 {
+		 grid-area: box3;
+	}
+	 body main .testimonials .testim-box4 {
+		 grid-area: box4;
+	}
+	 body main .testimonials .testim-box5 {
+		 grid-area: box5;
+	}
+	 body .attribution {
+		 margin: 30px 0;
+	}
+}
+ @media only screen and (max-width: 800px) {
+	 body {
+		 height: 100%;
+		 width: 100%;
+	}
+	 body main {
+		 margin: 50px auto;
+	}
+	 body main .testimonials {
+		 width: 70%;
+		 display: grid;
+		 grid-template-columns: 3fr;
+		 grid-template-rows: 0.9fr 0.5fr 0.5fr 0.9fr 1fr;
+		 grid-template-areas: 'box1' 'box2' 'box3' 'box4' 'box5';
+	}
+	 body main .testimonials .box .testim-box-content .title, body main .testimonials .testim-box1 .testim-box-content .title, body main .testimonials .testim-box2 .testim-box-content .title, body main .testimonials .testim-box3 .testim-box-content .title, body main .testimonials .testim-box4 .testim-box-content .title, body main .testimonials .testim-box5 .testim-box-content .title {
+		 height: unset;
+	}
+	 body main .testimonials .testim-box1 {
+		 grid-area: box1;
+	}
+	 body main .testimonials .testim-box1 #pattern {
+		 top: 0;
+		 left: unset;
+		 right: 30px;
+	}
+	 body main .testimonials .testim-box2 {
+		 grid-area: box2;
+	}
+	 body main .testimonials .testim-box3 {
+		 grid-area: box3;
+	}
+	 body main .testimonials .testim-box4 {
+		 grid-area: box4;
+	}
+	 body main .testimonials .testim-box5 {
+		 grid-area: box5;
+	}
+	 body .attribution {
+		 margin: 30px 0;
+	}
+}
+ 
